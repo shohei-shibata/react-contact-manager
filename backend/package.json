@@ -1,0 +1,51 @@
+{
+  "name": "backend",
+  "description": "contacts API server",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Shohei Shibata",
+    "email": "shohei.shibata.dev@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers": "^2.2.4",
+    "feathers-configuration": "^0.4.2",
+    "feathers-errors": "^2.9.2",
+    "feathers-hooks": "^2.1.2",
+    "feathers-hooks-common": "^5.0.4",
+    "feathers-rest": "^1.8.1",
+    "feathers-socketio": "^2.0.1",
+    "helmet": "^4.1.1",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "mocha": "^8.1.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
