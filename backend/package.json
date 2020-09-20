@@ -24,7 +24,7 @@
   "scripts": {
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
-    "start": "node src/",
+    "start": "nodemon src/",
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {
@@ -36,15 +36,19 @@
     "feathers-errors": "^2.9.2",
     "feathers-hooks": "^2.1.2",
     "feathers-hooks-common": "^5.0.4",
+    "feathers-mongoose": "^8.3.1",
     "feathers-rest": "^1.8.1",
     "feathers-socketio": "^2.0.1",
     "helmet": "^4.1.1",
+    "mongoose": "^5.10.6",
+    "mongoose-type-email": "^1.0.12",
     "serve-favicon": "^2.5.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
     "mocha": "^8.1.3",
+    "nodemon": "^2.0.4",
     "request": "^2.88.2",
     "request-promise": "^4.2.6"
   }
